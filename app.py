@@ -276,6 +276,218 @@
 
 '''
 
+# from flask import Flask, render_template, jsonify
+
+# app = Flask(__name__)
+
+# JOBS = [ 
+#     {
+#       'id': 1,
+#       'title': 'Data Analyst',
+#       'location': 'Benguluru, India',
+#       'salary': '10,00,000 P/A'
+
+#     },
+#     {
+#       'id': 2,
+#       'title': 'Data Scientist',
+#       'location': 'Delhi, India',
+#       'salary': '15,00,000 P/A'
+
+#     },
+#     {
+#       'id': 3,
+#       'title': 'Frontend Engineer',
+#       'location': 'Remote',
+      
+
+#     },
+#     {
+#       'id': 4,
+#       'title': 'Backend Engineer',
+#       'location': 'Pune, India',
+#       'salary': '13,00,000 P/A'
+
+#     },
+# ]
+
+
+# @app.route('/')
+# def hello_world():
+#     # return "Hello, World !!!"
+#     return render_template('home06.html', 
+#                            jobs=JOBS,
+#                            company_name = "Jovian")   # this html version of data
+
+# @app.route('/api/jobs') 
+# def list_jobs():
+#     return jsonify(JOBS)  #we create json object This is json version of data
+
+# ''' instead of rendering a template through html we can simply jsonify the the data
+#      API : application programming interface and it is just url which does not return html to
+#      be shown on the browser but it return some structured data in the form of json which is 
+#      programatically analyse so we create job endpoint and check that end point and then we 
+#      can create/replace that end point '/jobs' with '/api/jobs'.
+# ''' 
+
+ 
+# if __name__=="__main__":
+#     app.run(host='0.0.0.0',debug=True)
+
+
+#############################################################################################
+
+'''
+9) now we have to deploy this website on cloud. in some sense this website already deployed on 
+replet but is better suited foe development purpose, reple can shutdown any down any time
+beacuse it is free resources and it is unable to handle large workload all these reasons
+  1) now we are put it this into productions we need some cloud platform where we are going to
+    do this.  eg. AWS, render.com, google cloud, azure etc.
+
+  2) we are deploying on render.com cloud so goto this website we have to create account
+     1) allows acess to the git repos. fill codes and regarding info we need some requirements
+        so we have to create rquirements.txt in this we have add flask, gunicorn (it is production
+        server for python)
+
+     2) then after deploying we have to copy link and then visit for our web.
+
+'''
+# from flask import Flask, render_template, jsonify
+
+# app = Flask(__name__)
+
+# JOBS = [ 
+#     {
+#       'id': 1,
+#       'title': 'Data Analyst',
+#       'location': 'Benguluru, India',
+#       'salary': '10,00,000 P/A'
+
+#     },
+#     {
+#       'id': 2,
+#       'title': 'Data Scientist',
+#       'location': 'Delhi, India',
+#       'salary': '15,00,000 P/A'
+
+#     },
+#     {
+#       'id': 3,
+#       'title': 'Frontend Engineer',
+#       'location': 'Remote',
+      
+
+#     },
+#     {
+#       'id': 4,
+#       'title': 'Backend Engineer',
+#       'location': 'Pune, India',
+#       'salary': '13,00,000 P/A'
+
+#     },
+# ]
+
+
+# @app.route('/')
+# def hello_world():
+#     # return "Hello, World !!!"
+#     return render_template('home06.html', 
+#                            jobs=JOBS,
+#                            company_name = "Jovian") 
+
+# @app.route('/api/jobs') 
+# def list_jobs():
+#     return jsonify(JOBS) 
+
+# if __name__=="__main__":
+#     app.run(host='0.0.0.0',debug=True)
+
+
+#########################################################################################
+
+'''
+now we are see how to automate deployement each time if something changes
+   1) if we want domain name then we have to buy domain name and then made some config with
+   deploying web and you can select and add your domain name.
+  
+10) adding Navbar from bootstrap
+     1) making nav.html file and paste code in that file 
+     2) then goto the home07.html and add nav.html file in body part at top check file
+     3) adding nav bar, shadow 
+     4) adding footer making footer.html file
+     5) and this footer.html file added into the home07.html file end of body tag.
+     6) adding work.jpg made some config to fix that image.
+     
+
+'''
+
+# from flask import Flask, render_template, jsonify
+
+# app = Flask(__name__)
+
+# JOBS = [ 
+#     {
+#       'id': 1,
+#       'title': 'Data Analyst',
+#       'location': 'Benguluru, India',
+#       'salary': '10,00,000 P/A'
+
+#     },
+#     {
+#       'id': 2,
+#       'title': 'Data Scientist',
+#       'location': 'Delhi, India',
+#       'salary': '15,00,000 P/A'
+
+#     },
+#     {
+#       'id': 3,
+#       'title': 'Frontend Engineer',
+#       'location': 'Remote',
+      
+
+#     },
+#     {
+#       'id': 4,
+#       'title': 'Backend Engineer',
+#       'location': 'Pune, India',
+#       'salary': '13,00,000 P/A'
+
+#     },
+# ]
+
+
+# @app.route('/')
+# def hello_world():
+#     # return "Hello, World !!!"
+#     return render_template('home07.html', 
+#                            jobs=JOBS,
+#                            company_name = "Jovian") 
+
+# @app.route('/api/jobs') 
+# def list_jobs():
+#     return jsonify(JOBS) 
+
+# if __name__=="__main__":
+#     app.run(debug=True, host='0.0.0.0')
+
+
+###########################################################################################
+
+'''
+11)  apply button implimentation in jobitems.html page check out. 
+   1) at bottom in button tag replace with anchor or <a></a> tag int this tag we mentions url 
+      user herf="google.com"  when we click
+   2) on apply button then it will interface with google site.
+   3) now we are using url name is 'mailto' and create mail link first we have to visit 
+      mailtolink.me then we have fill data and create link and code copy that and paste that
+      link which replace goole.com url. 
+   4) now enabling contact us button same process as like apply button just type sub regarding
+      question and in body of question need name and question section.
+
+
+'''
+
 from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
@@ -315,35 +527,13 @@ JOBS = [
 @app.route('/')
 def hello_world():
     # return "Hello, World !!!"
-    return render_template('home06.html', 
+    return render_template('home08.html', 
                            jobs=JOBS,
-                           company_name = "Jovian")   # this html version of data
+                           company_name = "Jovian") 
 
 @app.route('/api/jobs') 
 def list_jobs():
-    return jsonify(JOBS)  #we create json object This is json version of data
+    return jsonify(JOBS) 
 
-''' instead of rendering a template through html we can simply jsonify the the data
-     API : application programming interface and it is just url which does not return html to
-     be shown on the browser but it return some structured data in the form of json which is 
-     programatically analyse so we create job endpoint and check that end point and then we 
-     can create/replace that end point '/jobs' with '/api/jobs'.
-''' 
-
- 
 if __name__=="__main__":
-    app.run(host='0.0.0.0',debug=True)
-
-
-#############################################################################################
-
-'''
-now we have to deploy this website on cloud. in some sense this website already deployed on 
-replet but is better suited foe development purpose, reple can shutdown any down any time
-beacuse it is free resources and it is unable to handle large workload all these reasons
-  1) now we are put it this into productions we need some cloud platform where we are going to
-    do this.  eg. AWS, render.com, google cloud, azure etc.
-
-  2) we are deploying on render.com cloud so goto this website we have to create account
-
-'''
+    app.run(debug=True, host='0.0.0.0')
